@@ -11,3 +11,33 @@ button.btn {
   text-align: center;
   vertical-align: middle;
 }
+    button:hover{
+      background-color: red;
+    }
+    
+    
+    .btn{
+       border: 2px black;
+       color: blue;
+       padding: 15px 60px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       cursor: pointer;
+       background-color: white;
+ } 
+ .btn--primary{
+   background-color: blue;
+   color: white;
+ }
+.btn--secondary{
+  background-color: silver;
+  color: black;
+}
+.btn--large{
+  padding: 15px 120px;
+}
+.btn--extra-large{
+  padding: 30px 150px;
+}
