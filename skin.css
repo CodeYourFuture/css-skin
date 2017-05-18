@@ -41,3 +41,16 @@ button.btn {
     height: 65px;
     font-size: 1.3em;
 }
+
+#list .list__group {
+    margin: 10px;
+    list-style: none;
+}
+
+.list__group .list__item {
+    padding: 5px;
+}
+
+.list__group.list--horizontal .list__item {
+    display: inline;
+}
