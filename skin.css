@@ -1,5 +1,5 @@
 .highlight {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 button.btn {
@@ -14,7 +14,7 @@ button.btn {
 
 .btn {
   border: 1px solid lightgrey;
-  color:  #3939ac;
+  color: #3939ac;
   background-color: white;
   height: 50px;
   width: 170px;
@@ -23,20 +23,20 @@ button.btn {
 }
 
 .btn--primary {
-  background-color:  #3939ac;
+  background-color: #3939ac;
   color: white;
-  }
-  
-  .btn--secondary {
+}
+
+.btn--secondary {
   color: grey;
-  background-color:whitesmoke;
-  border-color:grey;
+  background-color: whitesmoke;
+  border-color: grey;
   height: 50px;
   width: 160px;
 }
 
 .btn--large {
-  height:60px;
+  height: 60px;
   width: 260px;
   font-size: 20px;
 }
@@ -47,22 +47,22 @@ button.btn {
   font-size: 23px;
 }
 
-.list__title{
-  font: 26px bold;
+.list {
+  font-family: serif;
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.list {
- font-family: serif;
- color: black;
- font-size: 16px;
- line-height: 20px; 
+.list__title {
+  font: 26px bold;
 }
 
 .list__item {
   padding: 5px;
 }
 
-.list__item--horizental {
+.list__item--horizontal {
   display: inline;
   padding-right: 30px;
 }
