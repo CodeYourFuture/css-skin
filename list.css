@@ -1,0 +1,16 @@
+
+ .list .verticle {
+    border: 2px solid red;
+    margin-bottom: 50px;
+}
+
+.list .verticle li {
+    display: block;
+    background: pink;
+    inline-size: 100px;
+}
+
+.list .horizontal li {
+    display: inline;
+    background: skyblue;
+}
