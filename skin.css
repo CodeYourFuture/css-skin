@@ -11,3 +11,43 @@ button.btn {
   text-align: center;
   vertical-align: middle;
 }
+
+button.btn {
+    background: blue;
+    height: 60px;
+    width: 110px;
+    color: white;
+    font-size: 30px;
+}
+
+button.btn--primary {
+    background: blue;
+    height: 50px;
+    width: 150px;
+    color: white;
+    font-size: 30px;
+}
+
+button.btn--secondary {
+    background: blue;
+    height: 70px;
+    width: 170px;
+    color: white;
+    font-size: 50px;
+}
+
+button.btn--large {
+    background: blue;
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+}
+
+button.btn--extra-large {
+    background: blue;
+    height: 150px;
+    width: 250px;
+    color: white;
+    font-size: 50px;
+}
