@@ -1,0 +1,70 @@
+.highlight {
+    background-color: #ddd;
+}
+
+button.btn {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: normal;
+  line-height: 1.15;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn {
+  border: 1px solid lightgrey;
+  color:  #3939ac;
+  background-color: white;
+  height: 50px;
+  width: 170px;
+  font-size: 18px;
+  border-radius: 5px;
+
+  &--primary {
+    background-color:  #3939ac;
+    color: white;
+  }
+
+  &--secondary {
+    color: grey;
+    background-color:whitesmoke;
+    border-color:grey;
+    height: 50px;
+    width: 160px;
+  }
+
+  &--large {
+    height:60px;
+    width: 260px;
+    font-size: 20px;
+  }
+
+  &--extra-large {
+    height: 75px;
+    width: 365px;
+    font-size: 23px;
+  }
+
+}
+
+.list {
+ font-family: serif;
+ color: black;
+ font-size: 16px;
+ line-height: 20px;
+
+ &__title{
+    font: 26px bold;
+  }
+
+  &__item {
+    padding: 5px;
+  }
+
+  &__item--horizontal {
+    display: inline;
+    padding-right: 30px;
+  }
+
+}
