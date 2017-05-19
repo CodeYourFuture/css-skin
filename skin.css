@@ -40,6 +40,7 @@ button.btn {
   height:60px;
   width: 260px;
   font-size: 20px;
+  text-align: left;
 }
 
 .btn--extra-large {
@@ -67,4 +68,3 @@ button.btn {
   display: inline;
   padding-right: 30px;
 }
- 
