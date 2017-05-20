@@ -1,53 +1,62 @@
+$colors: ( white: #fff, light-grey: #ddd, light-blue: #3A66A7, blue: #0b4cb7, btn--secondary-bg: #F0F0F0, btn--secondary-color: #707070, btn-min-width: 170px, btn-min-heigth: 50px);
 .highlight {
-    background-color: #ddd;
+    background-color: map-get($colors, light-grey);
 }
 
-button.btn {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
-  text-align: center;
-  vertical-align: middle;
+@function calculate($value1, $value2) {
+    @return $value1+$value2;
 }
 
-button:hover {
-      background-color: red;
+%button {
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: normal;
+    line-height: 1.15;
+    text-align: center;
+    vertical-align: middle;
+    min-width: map-get($colors, btn-min-width);
+    min-height: map-get($colors, btn-min-heigth);
+    font-size: 1.1em;
+    background: map-get($colors, white);
+    color: map-get($colors, light-blue);
 }
-    
+
 .btn {
-      button:hover{
-      background-color: red;
+    @extend %button;
+    &:hover {
+        text-decoration: none;
     }
-    
-    
-    .btn{
-       border: 2px black;
-       color: blue;
-       padding: 15px 60px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 16px;
-       cursor: pointer;
-       background-color: white;
+    &#{&}--primary {
+        background: map-get($colors, blue);
+        color: map-get($colors, white);
+    }
+    &#{&}--secondary {
+        background: map-get($colors, btn--secondary-bg);
+        color: map-get($colors, btn--secondary-color);
+    }
+    &#{&}--large {
+        width: calculate(map-get($colors, btn-min-width), 80px);
+        height: calculate(map-get($colors, btn-min-heigth), 7.5px);
+    }
+    &#{&}--extra-large {
+        width: (map-get($colors, btn-min-width) + 180px);
+        height: (map-get($colors, btn-min-heigth) + 15px);
+        font-size: 1.3em;
+    }
+}
 
-       &--primary {
-           background-color: blue;
-           color: white;
-       }
-
-       &--secondary {
-           background-color: silver;
-           color: black;
-       }
-    
-       &--large {
-           padding: 15px 120px;
-       }
-    
-       &--extra-large{
-           padding: 30px 150px;
-       }
- }
+#list {
+    .list__group {
+        margin: 10px;
+        list-style: none;
+        .list__item {
+            padding: 5px;
+        }
+        &.list--horizontal {
+            .list__item {
+                display: inline;
+            }
+        }
+    }
+}
