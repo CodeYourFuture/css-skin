@@ -17,6 +17,12 @@ button:hover {
 }
     
 .btn {
+      button:hover{
+      background-color: red;
+    }
+    
+    
+    .btn{
        border: 2px black;
        color: blue;
        padding: 15px 60px;
@@ -44,4 +50,4 @@ button:hover {
        &--extra-large{
            padding: 30px 150px;
        }
-}
+ }
