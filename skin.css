@@ -11,3 +11,75 @@ button.btn {
   text-align: center;
   vertical-align: middle;
 }
+
+.btn.btn{
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:white;
+  text-align: center;
+  color:blue;
+  border-radius: 5px 5px 5px 5px;
+  font-weight:lighter;
+  font-size: 17px;
+}
+
+
+.btn.btn--primary{
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: slateblue;
+  text-align: center;
+  color:white;
+  border-radius: 5px 5px 5px 5px;
+  font-weight:lighter;
+  font-size: 18px;
+}
+
+
+.btn.btn--secondary{
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:whitesmoke;
+  text-align: center;
+  color:grey;
+  border-radius: 5px 5px 5px 5px;
+  font-weight:lighter;
+  font-size: 18px;
+
+
+}
+
+.btn.btn--large{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:white;
+  text-align: center;
+  color: slateblue;
+  border-radius: 5px 5px 5px 5px;
+  font-weight:lighter;
+  font-size: 18px;
+
+}
+
+ .btn.btn--extra-large{
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color:white;
+  text-align: center;
+  color: slateblue;
+  border-radius: 5px 5px 5px 5px;
+  font-weight:lighter;
+  font-size: 20px;
+
+}
+
