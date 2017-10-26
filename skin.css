@@ -2,12 +2,41 @@
     background-color: #ddd;
 }
 
-button.btn {
-  border-radius: 3px;
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding: 5px;
+}
+
+
+.btn--primary{
+  border-radius: 1px;
   border-style: solid;
   border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
-  text-align: center;
-  vertical-align: middle;
+  background-color: #04885c;
+  }
+
+.btn--secondary {
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #9c1774;
 }
+
+
+.btn--large{
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #3e11a7;
+}
+ 
+.btn--extra-large{
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #500202;
+  }
+
+ 
+
