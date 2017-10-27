@@ -14,3 +14,17 @@ button.btn {
   font-size: 18px;
   background: #ffffff;
 }
+
+
+button.btn--primary {
+	background: #0614B7;
+	color: #ffffff;
+	border: none;
+}
+
+
+button.btn--secondary {
+	background: #F7F6F5;
+	color: #565656;
+	border: 1px #ACACAB solid;
+}
