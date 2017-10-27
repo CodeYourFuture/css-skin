@@ -28,3 +28,15 @@ button.btn--secondary {
 	color: #565656;
 	border: 1px #ACACAB solid;
 }
+
+
+button.btn--large {
+	padding: 20px 105px;
+    font-size: 20;
+}
+
+
+button.btn--extra-large {
+	padding: 20px 140px;
+	font-size: 22px;
+}
