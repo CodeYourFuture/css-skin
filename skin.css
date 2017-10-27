@@ -1,13 +1,50 @@
+/* css-skin-prabesh */
+
+
 .highlight {
     background-color: #ddd;
 }
 
+/* common style for all buttons with class btn */
 button.btn {
+  font-size: 1.09em;
   border-radius: 3px;
+  color: #2A31BB;
+  background: transparent;
+  padding: 14px 61px;
   border-style: solid;
   border-width: 1px;
   font-weight: normal;
   line-height: 1.15;
   text-align: center;
   vertical-align: middle;
+  margin-left: 7px;
+  outline: none;
+}
+
+/* styles only applicable to buttons with class btn--primary */
+button.btn--primary {
+  background: #2A31BB;
+  color: fff;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* styles only applicable to buttons with class btn--socondary */
+button.btn--secondary {
+  background: #F7F6F5;
+  color: #575364;
+  border: 1px solid #989898;
+}
+
+/* styles only applicable to buttons with class btn--large */
+button.btn--large {
+  font-size: 1.24em;
+  padding: 18px 101px;
+}
+
+/* styles only applicable to buttons with class btn--extra-large */
+button.btn--extra-large {
+  font-size: 1.5em;
+  padding: 20px 140px;
 }
