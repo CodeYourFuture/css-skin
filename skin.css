@@ -8,7 +8,6 @@ button.btn {
 	font-size: 18px;
 	line-height: 1.5;
 	font-weight: normal;
-	vertical-align: middle;
 	color: #1b67cb;
 	background: #ffffff;
 	border: 1px #cecece solid;
@@ -42,9 +41,7 @@ button.btn--extra-large {
 
 ul.list {
 	display: flex;
-	list-style-type: none;
-	padding: 10px 20px;
-
+	list-style-type: square;
 }
 
 ul.list--vertical {
