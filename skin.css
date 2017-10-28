@@ -18,7 +18,7 @@ button.btn {
 button.btn--primary {
 	background: #0654BA;
 	color: #fff;
-	border: none;
+	border-color: #0654BA;
 }
 
 button.btn--secondary {
@@ -34,4 +34,60 @@ button.btn--large {
 button.btn--extra-large {
 	padding: 20px 140px;
 	font-size: 22px;
+}
+
+.menu {
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.main-menu {
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.sidebar-menu {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.menu-item {
+	padding-left: 20px;
+}
+
+.sidebar-menu .menu-item {
+	padding-left: 22px;
+}
+
+.menu-item a {
+	border-bottom: 1px solid #1B67C8;
+	color: #333;
+	text-decoration: none;
+}
+
+.menu-item a:hover {
+	border-color: #fff;
+}
+
+.home {
+	background: url(img/home-icon-min.png) no-repeat;
+}
+
+.about {
+	background: url(img/Info-min.png) no-repeat;
+}
+
+.portfolio {
+	background: url(img/portfolio-icon-min.png) no-repeat;
+}
+
+.contact {
+	background: url(img/contact-icon-min.png) no-repeat;
 }
