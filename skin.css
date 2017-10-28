@@ -2,6 +2,29 @@
     background-color: #ddd;
 }
 
+
+.menu {
+    	list-style-type: none;
+    	display: flex;
+    }
+
+.menu-horizontal {
+        	justify-content: space-around;
+            margin-bottom: 50px;
+            max-width: 50%;
+        }
+.menu-vertical {
+            flex-direction: column;
+            padding-left: 90px;
+        }
+ .menu-vertical.li{
+     margin-bottom: 10px; 
+ }
+ li a:hover {
+    background-color: #111111;
+}
+
+    
 button.btn {
   border-radius: 3px;
   border: 1px #CECECE solid;
@@ -9,7 +32,7 @@ button.btn {
   line-height: 1.15;
   text-align: center;
   vertical-align: middle;
-  padding: 13 58;
+  padding: 13 58px;
   color: #2115E0;
   font-size: 18px;
   background: #ffffff;
@@ -40,3 +63,4 @@ button.btn--extra-large {
 	padding: 20px 140px;
 	font-size: 22px;
 }
+
