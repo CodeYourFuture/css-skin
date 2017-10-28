@@ -11,3 +11,40 @@ button.btn {
   text-align: center;
   vertical-align: middle;
 }
+.btn{
+  background-color: white; 
+  color: rgba(78, 3, 177, 0.945);
+  padding: 14px 58px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 14px;
+  
+}
+button{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover{
+  background-color: white;
+  color: rgba(111, 0, 255, 0.589);
+
+}
+.btn--primary{
+  background-color: rgba(58, 3, 161, 0.815);
+  color: white;
+  padding: 17px 59px;
+  margin-left: 10px;
+}
+.btn--secondary{
+  background-color: rgb(195, 195, 195, 0.21);
+  color: rgba(95, 81, 81, 0.95);
+}
+.btn--large{
+  padding: 21px 104px;
+}
+.btn--extra-large{
+  padding: 23px 147px;
+}
