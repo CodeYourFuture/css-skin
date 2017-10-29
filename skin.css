@@ -5,7 +5,7 @@
     background-color: #ddd;
 }
 
-/* common style for all buttons with class btn */
+
 button.btn {
   font-size: 1.09em;
   border-radius: 3px;
@@ -22,7 +22,7 @@ button.btn {
   outline: none;
 }
 
-/* styles only applicable to buttons with class btn--primary */
+
 button.btn--primary {
   background: #2A31BB;
   color: fff;
@@ -30,14 +30,13 @@ button.btn--primary {
   font-weight: 500;
 }
 
-/* styles only applicable to buttons with class btn--socondary */
+
 button.btn--secondary {
   background: #F7F6F5;
   color: #575364;
   border: 1px solid #989898;
 }
 
-/* styles only applicable to buttons with class btn--large */
 button.btn--large {
   font-size: 1.24em;
   padding: 18px 101px;
