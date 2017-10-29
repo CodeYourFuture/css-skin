@@ -1,5 +1,5 @@
 .highlight {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 button.btn {
@@ -14,28 +14,30 @@ button.btn {
 
 .btn {
   border-radius: 30%;
-    padding: 15px 60px;
-    background-color: #FFFFFF;
-    font-size: 18px;
-    color: #0196FA;
-    margin-left: 8px;
+  padding: 15px 60px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #0196FA;
+  margin-left: 8px;
 }
+
 .btn--primary {
-    background-color: #2164E2;
-    font-size: 18px;
-    color: white;
-    margin-left: 8px;
+  background-color: #0196FA;
+  color: #fff;
+  margin-left: 8px;
 }
+
 .btn--secondary {
   color: #747474;
   border-color: #636262;
-  background-color: #F1EFEF;
+  background-color: #fff;
 }
+
 .btn--large {
   padding: 20px 100px;
 }
-.btn--extra-large{
+
+.btn--extra-large {
   padding: 22px 140px;
   font-size: 24px;
 }
-

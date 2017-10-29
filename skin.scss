@@ -1,0 +1,45 @@
+.highlight {
+    background-color: #ddd;
+}
+$blu-color:#0196FA;
+$b-c-color: #fff;
+
+
+button.btn {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: normal;
+  line-height: 1.15;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn {
+  border-radius: 30%;
+  padding: 15px 60px;
+  background-color: $b-c-color;
+  font-size: 18px;
+  color: $blu-color;
+  margin-left: 8px;
+
+  &--primary {
+    background-color: $blu-color;
+    color: $b-c-color;
+    margin-left: 8px;
+  }
+  &--secondary{
+    color: #747474;
+    border-color: #636262;
+    background-color: $b-c-color;
+  }
+  &--large{
+    padding: 20px 100px;
+  }
+  &--extra-large{
+    padding: 22px 140px;
+    font-size: 24px;
+  }
+}
+
+
