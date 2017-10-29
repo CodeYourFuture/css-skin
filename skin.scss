@@ -13,52 +13,52 @@ button.btn {
 	border: 1px #cecece solid;
 	border-radius: 3px;	
 	letter-spacing: -1.5;
-}
 
-button.btn--primary {
-	color: #ffffff;
-	background: #0654ba;
-	border: 1px solid #0654ba;
-}
 
-button.btn--secondary {
-	color: #5b5757;
-	background: #f7f6f5;
-	border: 1px #acacab solid;
-}
+	&--primary {
+		color: #ffffff;
+		background: #0654ba;
+		border: 1px solid #0654ba;
+	}
 
-button.btn--large {
-	padding: 15px 105px;
-	letter-spacing: 0;
-	font-size: 20px;
-}
+	&--secondary {
+		color: #5b5757;
+		background: #f7f6f5;
+		border: 1px #acacab solid;
+	}
 
-button.btn--extra-large {
-	padding: 15px 140px;
-	letter-spacing: 0;
-	font-size: 24px;
+	&--large {
+		padding: 15px 105px;
+		letter-spacing: 0;
+		font-size: 20px;
+	}
+
+	&--extra-large {
+		padding: 15px 140px;
+		letter-spacing: 0;
+		font-size: 24px;
+	}
 }
 
 ul.list {
 	display: flex;
 	list-style-type: square;
+
+	&--vertical {
+		display: flex;
+		flex-direction: column;
 }
 
-ul.list--vertical {
-	display: flex;
-	flex-direction: column;
-}
-
-ul.list--horisontal 
+	&--horisontal 
 	li {
 		margin-right: 40px;
 	}
 
-ul.list--horisontal 
+	&--horisontal 
 	li:last-child {
 		margin-right: 0;
 	}
-
+}
 /* Loop */
 
 .paragraph {
