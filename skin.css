@@ -1,13 +1,71 @@
 .highlight {
-    background-color: #ddd;
+	background-color: #ddd;
 }
 
 button.btn {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
-  text-align: center;
-  vertical-align: middle;
+	margin-left: 5px;
+	padding: 10px 65px;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: normal;
+	color: #1b67cb;
+	background: #ffffff;
+	border: 1px #cecece solid;
+	border-radius: 3px;	
+	letter-spacing: -1.5;
+}
+
+button.btn--primary {
+	color: #ffffff;
+	background: #0654ba;
+	border: 1px solid #0654ba;
+}
+
+button.btn--secondary {
+	color: #5b5757;
+	background: #f7f6f5;
+	border: 1px #acacab solid;
+}
+
+button.btn--large {
+	padding: 15px 105px;
+	letter-spacing: 0;
+	font-size: 20px;
+}
+
+button.btn--extra-large {
+	padding: 15px 140px;
+	letter-spacing: 0;
+	font-size: 24px;
+}
+
+ul.list {
+	display: flex;
+	list-style-type: square;
+}
+
+ul.list--vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+ul.list--horisontal li {
+	margin-right: 40px;
+}
+
+ul.list--horisontal li:last-child {
+	margin-right: 0;
+}
+
+/* Loop */
+
+.paragraph {
+  font-family: Helvetica, Arial, sans-serif;
+  color: gray;
+}
+  
+@for $i from 1 through 3 {
+    .paragraph-size-#{$i} {
+      font-size: 15px * $i;
+    }
 }

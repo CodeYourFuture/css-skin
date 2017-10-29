@@ -1,0 +1,73 @@
+.highlight {
+	background-color: #ddd;
+}
+
+button.btn {
+	margin-left: 5px;
+	padding: 10px 65px;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: normal;
+	color: #1b67cb;
+	background: #ffffff;
+	border: 1px #cecece solid;
+	border-radius: 3px;	
+	letter-spacing: -1.5;
+
+
+	&--primary {
+		color: #ffffff;
+		background: #0654ba;
+		border: 1px solid #0654ba;
+	}
+
+	&--secondary {
+		color: #5b5757;
+		background: #f7f6f5;
+		border: 1px #acacab solid;
+	}
+
+	&--large {
+		padding: 15px 105px;
+		letter-spacing: 0;
+		font-size: 20px;
+	}
+
+	&--extra-large {
+		padding: 15px 140px;
+		letter-spacing: 0;
+		font-size: 24px;
+	}
+}
+
+ul.list {
+	display: flex;
+	list-style-type: square;
+
+	&--vertical {
+		display: flex;
+		flex-direction: column;
+}
+
+	&--horisontal 
+	li {
+		margin-right: 40px;
+	}
+
+	&--horisontal 
+	li:last-child {
+		margin-right: 0;
+	}
+}
+/* Loop */
+
+.paragraph {
+  font-family: Helvetica, Arial, sans-serif;
+  color: gray;
+}
+  
+@for $i from 1 through 4 {
+    .paragraph-size-#{$i} {
+      font-size: 15px * $i;
+    }
+}
