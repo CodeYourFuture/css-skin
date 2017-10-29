@@ -49,13 +49,15 @@ ul.list--vertical {
 	flex-direction: column;
 }
 
-ul.list--horisontal li {
-	margin-right: 40px;
-}
+ul.list--horisontal 
+	li {
+		margin-right: 40px;
+	}
 
-ul.list--horisontal li:last-child {
-	margin-right: 0;
-}
+ul.list--horisontal 
+	li:last-child {
+		margin-right: 0;
+	}
 
 /* Loop */
 
@@ -64,7 +66,7 @@ ul.list--horisontal li:last-child {
   color: gray;
 }
   
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
     .paragraph-size-#{$i} {
       font-size: 15px * $i;
     }
