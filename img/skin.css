@@ -18,24 +18,24 @@
   cursor: pointer;
 }
 
-.btn--primary {
+button.btn--primary {
   background: #0654ba;
   border-color: #0654ba;
   color: #fff;
 }
 
-.btn--secondary {
+button.btn--secondary {
   background: #f7f6f5;
   color: #797979;
-  border-color: #797979;
+  border-color: #b2b2b2;
 }
 
-.btn--large {
+button.btn--large {
   padding: 20px 105px;
   font-size: 20px;
 }
 
-.btn--extra-large {
+button.btn--extra-large {
   padding: 25px 145px;
   font-size: 23px;
 }
@@ -44,7 +44,7 @@
 .secondary {
   background: #f7f6f5;
   color: #797979;
-  border-color: #797979;
+  border-color: #b2b2b2;
 }
 
 .primary {
@@ -77,53 +77,4 @@
 .nav-vertical {
   display: flex;
   flex-direction: column;
-}
-
-/* list nested */
-.list ul {
-  list-style: disc;
-  margin: 0;
-}
-
-.list li {
-  float: none;
-}
-
-.list a {
-  display: block;
-  text-decoration: none;
-  font-size: 1.2em;
-  margin-bottom: 4px;
-  color: #242020;
-}
-
-/* paragraphs */
-.para-1 {
-  font-size: 17px;
-}
-
-.para-1 {
-  color: red;
-}
-
-.para-2 {
-  font-size: 19px;
-}
-
-.para-2 {
-  background: orange;
-  padding: 0 30px;
-}
-
-.para-3 {
-  font-size: 21px;
-}
-
-.para-3 {
-  background: green;
-  color: #fff;
-}
-
-.para-4 {
-  font-size: 23px;
 }
