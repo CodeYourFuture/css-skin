@@ -43,13 +43,19 @@ button.btn--extra-large{
 
 /* Nav */
 
+.secondary{
+  background: #f7f6f5;
+  color: #797979;
+  border-color: #b2b2b2;
+}
+
 .primary{
   background: #0654ba;
   border-color: #0654ba;
   color: #fff;
 }
 
-a{
+.nav-link{
   text-decoration: none;
   display: block;
   color: #201F1F;
@@ -66,7 +72,6 @@ a{
 
 .nav-horizontal{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -74,10 +79,6 @@ a{
 .nav-vertical{
   display: flex;
   flex-direction: column;
-}
-
-.nav-li{
-  flex: 1 0 auto;
 }
 
 
