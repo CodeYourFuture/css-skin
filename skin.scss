@@ -1,0 +1,130 @@
+
+.highlight {
+    background-color: #ddd;
+}
+
+$primary:#0654ba;
+$secondary:#797979;
+
+.btn {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 18px;
+  color: #417cce;
+  font-weight: normal;
+  line-height: 1.15;
+  text-align: center;
+  vertical-align: middle;
+  padding: 14px 60px;
+  margin-left: 5px;
+  cursor: pointer;
+
+  &--primary {
+    background: $primary;
+    border-color: $primary;
+    color: #fff;
+  }
+
+  &--secondary {
+    background: #f7f6f5;
+    color: $secondary;
+    border-color:$secondary;
+  }
+
+  &--large{
+    padding: 20px 105px;
+    font-size: 20px;
+  }
+
+  &--extra-large{
+    padding: 25px 145px;
+    font-size: 23px;
+  }
+}
+
+
+/* Nav */
+
+.secondary{
+  background: #f7f6f5;
+  color: $secondary;
+  border-color: $secondary;
+}
+
+.primary{
+  background: $primary;
+  border-color: $primary;
+  color: #fff;
+}
+
+.nav-link{
+  text-decoration: none;
+  display: block;
+  color: #201F1F;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 18%;
+}
+
+.nav-horizontal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+/* list nested */
+
+.list{
+  ul{
+    list-style: disc;
+    margin: 0;
+  }
+  li{
+    float: none;
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+    color: #242020;
+  }
+}
+
+ /* paragraphs */
+ 
+@for $i from 1 through 4 {
+  $fontSize:  2 * $i + 15px;
+  .para-#{$i}{
+    font-size: $fontSize;
+  }
+  @if $i == 1 {
+    .para-#{$i}{
+      color: red;
+    }
+  }@else if $i == 2{
+    .para-#{$i}{
+      background: orange;
+      padding: 0 30px;
+    }
+  }
+  @else if $i == 3{
+    .para-#{$i}{
+      background: green;
+      color: #fff;
+    }
+  }
+}
