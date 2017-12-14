@@ -1,0 +1,51 @@
+$btn-color:#105bba;
+.btn{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    vertical-align: middle;
+    width:176px;
+    background-color:white;
+    font-size: 17.3px;
+    color: $btn-color;
+    padding:15px;
+
+
+&--primary {
+    background-color: $btn-color;
+    color: white;
+  }
+&--secondary{
+    background-color:#f7f6f5;
+    color:#646361;
+    border-color:#66635f;
+}  
+&--large {
+    width:260px;
+    font-size:20px;
+    padding:19px;
+}
+  
+&--extra-large {
+    width:346px;
+    font-size:22px;
+    padding:21px;
+  }
+}
+.topic{
+    
+   li{
+
+  list-style-type: none;
+    padding:20px;
+    font-weight: bold;
+   }
+      
+    &--nav li{
+    display:inline;
+    font-size: 1.2rem;
+        /* line-height: 35px; */
+        /* text-align:center; */
+    }
+}  
