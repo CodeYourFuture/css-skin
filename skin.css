@@ -1,13 +1,51 @@
 .highlight {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 button.btn {
-  border-radius: 3px;
+  border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
   text-align: center;
   vertical-align: middle;
+  width:176px;
+  background-color:white;
+  font-size: 17.3px;
+  color:#105bba;
+  padding:15px;
+}
+
+button.btn--primary {
+  background-color:#105bba;
+  color:white;
+}
+
+button.btn--secondary {
+  background-color:#f7f6f5;
+  color:#646361;
+  border-color:#66635f;
+}
+
+button.btn--large {
+  width:260px;
+  font-size:20px;
+  padding:19px;
+}
+
+button.btn--extra-large {
+  width:346px;
+  font-size:22px;
+  padding:21px;
+}
+.topic li{
+  list-style-type: none;
+  padding:20px;
+  font-weight: bold;
+}
+
+.topic--nav li{
+  display:inline;
+  font-size: 1.2rem;
+   /* line-height: 35px; */
+   /* text-align:center; */
 }
