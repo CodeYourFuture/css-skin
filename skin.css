@@ -1,14 +1,13 @@
 .btn {
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid #545353;
   text-align: center;
   vertical-align: middle;
-  width: 176px;
+  width: 11.4rem;
   background-color: white;
-  font-size: 17.3px;
+  font-size: 1.2rem;
   color: #1a5bb1;
-  padding: 15px;
+  padding: 0.9rem;
 }
 
 .btn--primary {
