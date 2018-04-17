@@ -1,0 +1,48 @@
+$btn-color: blue;
+$bg-color: white;
+$btn-padding: 13px 56px;
+$btn-font-size: 18px;
+
+$btn-p-color: white;
+$bg-p-color: rgb(15, 15, 202);
+
+$btn-se-color: gray;
+$bg-se-color: rgb(241, 234, 234);
+
+$btn-l-padding: 16px 90px;
+$btn-l-font-size: 21px;
+
+$btn-xl-padding: 20px 135px;
+$btn-xl-font-size: 24px;
+
+@mixin btn-m($btn-color, $bg-color, $btn-padding, $btn-font-size){
+	padding: $btn-padding;
+	border-radius: 5px;
+	border: solid 1px silver;
+	font-size: $btn-font-size;
+	background-color: $bg-color;
+	color: $btn-color;
+	margin-left: 8px;
+}
+
+.btn{
+	@include btn-m($btn-color, $bg-color, $btn-padding, $btn-font-size);
+}
+
+.btn--primary{
+	@include btn-m($btn-p-color, $bg-p-color, $btn-padding, $btn-font-size);
+}
+
+.btn--secondary{
+	@include btn-m($btn-se-color, $bg-se-color, $btn-padding, $btn-font-size);
+}
+
+.btn--large{
+	@include btn-m($btn-color, $bg-color, $btn-l-padding, $btn-l-font-size);
+}
+
+.btn--extra-large{
+	@include btn-m($btn-color, $bg-color, $btn-xl-padding, $btn-xl-font-size);
+}
+
+
