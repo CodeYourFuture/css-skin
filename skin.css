@@ -1,13 +1,48 @@
 .highlight {
-    background-color: #ddd;
+  background-color: #565656;
 }
 
-button.btn {
+button.btn--default {
+  padding: 16px 62px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0025F5;
   border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
-  text-align: center;
-  vertical-align: middle;
+  font-size: 20px;
+}
+
+button.btn--primary {
+  padding: 16px 62px;
+  border: 1px solid #cbcbcb;
+  background: #0025F5;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+button.btn--secondary {
+  padding: 16px 62px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0025F5;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+button.btn--large {
+  padding: 16px 100px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0025F5;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+button.btn--extra-large {
+  padding: 22px 150px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0025F5;
+  border-radius: 3px;
+  font-size: 20px;
 }
