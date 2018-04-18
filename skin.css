@@ -32,3 +32,15 @@
   font-size: 1.7rem;
   padding: 1.7rem;
 }
+
+.btn--extra-small {
+  width: 10rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.btn--small {
+  width: 15rem;
+  font-size: 1rem;
+  padding: 1.2rem;
+}
