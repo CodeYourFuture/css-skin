@@ -38,11 +38,33 @@ $btn-color:#1a5bb1;
     width: 10rem;
     font-size: 0.9rem;
     padding: 1rem;
+    background: #ebc53d;
     }
 
 &--small {
   width: 15rem;
   font-size: 1rem;
   padding: 1.2rem;
+  background: #d439ab;
+}
+
+&--read-me {
+  background: #6f6fd6;
+}
+
+&--login {
+  font-size: 1.3rem;
+}
+
+&--logout {
+  color: #52d93d;
+  background: #6b6642;
+}
+
+&--summit {
+  font-size: 2rem;
+  padding: 1.5rem;
+  width: 17rem;
+  color: #a68931;
 }
 }

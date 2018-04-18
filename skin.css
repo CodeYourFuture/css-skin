@@ -37,10 +37,32 @@
   width: 10rem;
   font-size: 0.9rem;
   padding: 1rem;
+  background: #ebc53d;
 }
 
 .btn--small {
   width: 15rem;
   font-size: 1rem;
   padding: 1.2rem;
+  background: #d439ab;
+}
+
+.btn--read-me {
+  background: #6f6fd6;
+}
+
+.btn--login {
+  font-size: 1.3rem;
+}
+
+.btn--logout {
+  color: #52d93d;
+  background: #6b6642;
+}
+
+.btn--summit {
+  font-size: 2rem;
+  padding: 1.5rem;
+  width: 17rem;
+  color: #a68931;
 }
