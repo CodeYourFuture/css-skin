@@ -1,0 +1,115 @@
+.highlight {
+    background-color: #565656;
+}
+
+
+$bright-blue: #0025F5;
+$white: #fff;
+$grey: #cbcbcb;
+
+@mixin btn($color, $background-color,$padding) {
+  padding: $padding;
+  border: 1px solid  $grey ;
+  background:$background-color;
+  color:$color;
+  border-radius: 3px;
+  font-size: 20px;
+
+}
+
+
+button.btn--default {
+ @include btn($bright-blue,$white,16px 62px) ;
+}
+
+button.btn--primary {
+@include btn($white,$bright-blue,16px 62px);
+}
+button.btn--secondary {
+@include btn($bright-blue,$white,16px 62px);
+}
+button.btn--large {
+@include btn($bright-blue,$white,16px 100px);
+}
+button.btn--extra-large {
+@include btn($bright-blue,$white,22px 150px);  
+}
+
+.highlight {
+    background-color: #565656;
+}
+
+
+$bright-blue: #0025F5;
+$white: #fff;
+$grey: #cbcbcb;
+
+@mixin btn($color, $background-color,$padding) {
+  padding: $padding;
+  border: 1px solid  $grey ;
+  background:$background-color;
+  color:$color;
+  border-radius: 3px;
+  font-size: 20px;
+
+}
+
+
+button.btn--default {
+ @include btn($bright-blue,$white,16px 62px) ;
+}.highlight {
+    background-color: #565656;
+}
+
+
+$bright-blue: #0025F5;
+$white: #fff;
+$grey: #cbcbcb;
+
+@mixin btn($color, $background-color,$padding) {
+  padding: $padding;
+  border: 1px solid  $grey ;
+  background:$background-color;
+  color:$color;
+  border-radius: 3px;
+  font-size: 20px;
+
+}
+
+
+button.btn--default {
+ @include btn($bright-blue,$white,16px 62px) ;
+}
+
+button.btn--primary {
+@include btn($white,$bright-blue,16px 62px);
+}
+button.btn--secondary {
+@include btn($bright-blue,$white,16px 62px);
+}
+button.btn--large {
+@include btn($bright-blue,$white,16px 100px);
+}
+button.btn--extra-large {
+@include btn($bright-blue,$white,22px 150px);  
+}
+
+
+
+button.btn--primary {
+@include btn($white,$bright-blue,16px 62px);
+}
+button.btn--secondary {
+@include btn($bright-blue,$white,16px 62px);
+}
+button.btn--large {
+@include btn($bright-blue,$white,16px 100px);
+}
+button.btn--extra-large {
+@include btn($bright-blue,$white,22px 150px);  
+}
+button.btn--full-width {
+@include btn($white,$bright-blue,6px 100px);
+}
+
+
