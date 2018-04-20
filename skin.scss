@@ -1,0 +1,28 @@
+@import 'base';
+@import 'abstract';
+@import 'components';
+.highlight {
+    background-color: #ddd;
+}
+.demo {
+    > button{
+        margin: .7rem;
+    }
+    > p{
+        font-size: 1.8rem;
+    }
+    &-nav{
+        height: 15rem;
+        >ul{
+            margin: 2rem 0;
+        }
+        
+    }
+}
+.expected{
+    > p{
+        font-size: 1.8rem;
+    }
+}
+
+    
