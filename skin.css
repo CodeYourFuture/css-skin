@@ -1,13 +1,71 @@
-.highlight {
-    background-color: #ddd;
+.button {
+  color: #224C8B;
+  background-color: #ffffff;
+  width: 175px;
+  padding: 15px 5px;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
 }
 
-button.btn {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
-  text-align: center;
-  vertical-align: middle;
+.button:hover {
+  cursor: default;
+}
+
+.button--default {
+  color: #224C8B;
+  background-color: #ffffff;
+  width: 175px;
+  padding: 15px 5px;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+}
+
+.button--default:hover {
+  cursor: default;
+}
+
+.btn--primary {
+  color: #ffffff;
+  background-color: #224C8B;
+  width: 175px;
+  padding: 15px 5px;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+}
+
+.btn--primary:hover {
+  cursor: default;
+}
+
+.btn--secondary {
+  color: #B8B8B8;
+  background-color: #fbfbfb;
+  width: 175px;
+  padding: 15px 5px;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+}
+
+.btn--secondary:hover {
+  cursor: default;
+}
+
+.btn--large {
+  color: #224C8B;
+  background-color: #ffffff;
+  width: 175px;
+  padding: 15px 5px;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  width: 270px;
+  padding: 25px;
+}
+
+.btn--large:hover {
+  cursor: default;
 }
