@@ -8,6 +8,7 @@ $blue: #224C8B;
 $lightgray: rgb(251, 251, 251);
 $gray: #B8B8B8;
 $width-large: 270px;
+$width-extra-large: $width-large * 1.30;
 $padding-large:25px;
 
 @mixin btn ($color, $background-color, $border-color) {
@@ -30,6 +31,9 @@ $padding-large:25px;
 %padding-large {
     padding: $padding-large;
 }
+%width-extra-large {
+    width: $width-extra-large;
+}
 
 .button {
   @include btn($blue, $white, $gray);
@@ -46,5 +50,9 @@ $padding-large:25px;
 .btn--large {
     @include btn($blue, $white, $gray);
     width: $width-large;
+    padding: $padding-large;
+}
+.btn--extra-large {
+    @extend %width-extra-large;
     padding: $padding-large;
 }

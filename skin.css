@@ -1,3 +1,7 @@
+.btn--extra-large {
+  width: 351px;
+}
+
 .button {
   color: #224C8B;
   background-color: #ffffff;
@@ -68,4 +72,8 @@
 
 .btn--large:hover {
   cursor: default;
+}
+
+.btn--extra-large {
+  padding: 25px;
 }
