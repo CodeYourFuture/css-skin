@@ -1,0 +1,58 @@
+$bright-orange: #ffcc66;
+$orange: #d58512;
+$red: #cc0000;
+$white: #ffffff;
+$thickness: 4px;
+$background-color: #333;
+$blue: #224C8B;
+$lightgray: rgb(251, 251, 251);
+$gray: #B8B8B8;
+$width-large: 270px;
+$width-extra-large: $width-large * 1.30;
+$padding-large:25px;
+
+@mixin btn ($color, $background-color, $border-color) {
+  color: $color;
+  background-color: $background-color;
+  width: 175px;
+  padding: 15px 5px;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+    &:hover{
+        cursor: default;
+    }
+    
+}
+%width-large {
+    width: $width-large;
+    
+  }
+%padding-large {
+    padding: $padding-large;
+}
+%width-extra-large {
+    width: $width-extra-large;
+}
+
+.button {
+  @include btn($blue, $white, $gray);
+}
+.button--default {
+    @include btn($blue, $white, $gray)
+}
+.btn--primary {
+    @include btn($white, $blue, $blue)
+}
+.btn--secondary {
+    @include btn($gray,$lightgray, $gray)
+}
+.btn--large {
+    @include btn($blue, $white, $gray);
+    width: $width-large;
+    padding: $padding-large;
+}
+.btn--extra-large {
+    @extend %width-extra-large;
+    padding: $padding-large;
+}
