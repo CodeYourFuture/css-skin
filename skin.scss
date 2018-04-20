@@ -1,0 +1,143 @@
+.highlight {
+    background-color: #ddd;
+}
+//...............the main button with mixin....................
+$color:#2B59C3;
+$radius:4px;
+$width:170px;
+$line-height:2.5;
+$font-size:18px;
+$font-weight:lighter;
+
+@mixin btn ( $color, $background-color, $radius, $width, $line-height,$font-size, $font-weight) {
+  color:$color;
+  background-color: $background-color;
+  border-radius:$radius;
+  width:$width;
+  line-height: $line-height;
+  font-size: $font-size;
+  font-weight:$font-weight;
+}
+
+
+.btn {
+  @include btn($color,transparent, $radius,$width,$line-height,$font-size,$font-weight);
+ 
+  border-style: solid;
+  border-width: 1px;
+
+  text-align:center;
+  vertical-align:middle;
+
+//..............primary button (modifier)..............
+
+&--primary{
+color:white;
+background-color:$color;
+
+}
+//..............secondary button (modifier)..............
+
+&--secondary{
+  background-color:whitesmoke;
+  color:	#696969;
+  border-color: darkgrey;
+ 
+}
+//..............large button (modifier).....................
+
+&--large{
+  width:260px;
+  font-size: 20px;
+  font-weight:300;
+  line-height: 2.7;
+}
+
+//................extra large button (modifier)...............
+
+&--extra-large{
+  width:350px;
+  font-weight:300;
+  line-height: 2.8;
+  font-size: 23px;
+
+}
+
+//.................active button
+
+&--animated:active{
+    background-color: #FFEECF;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+   
+  
+}
+
+}
+//................Navigation......................
+.main{
+  width:100%;
+
+}
+
+ul{
+  margin:0px; 
+  padding: 0px;
+  list-style: none;
+}
+
+ul li{
+  float: left;
+  background-color:black;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+ margin-right:2px;
+}
+
+ul li a{
+  text-decoration: none;
+  color:white;
+  display:block; 
+}
+
+ul li a:hover{
+  background-color: green;
+}
+
+ul li ul li{
+  display:none;
+}
+
+ul li:hover ul li{
+  display: block;
+}
+//...............input..................
+
+
+$padding:12px 20px;
+$width:20%;
+$margin: 8px 0;
+$border: 1px solid #555;
+$background-color:#FBCAEF;
+$font-size:14px;
+
+
+@mixin input ( $background-color, $width,$padding, $margin,$border,$font-size) {
+  
+  background-color: $background-color;
+  padding: $padding;
+  margin:$margin;
+  width:$width;
+ border:$border;
+ font-size:$font-size;
+
+}
+input {
+  @include input( $background-color, $width,$padding, $margin,$border,$font-size);
+
+display:block;
+}
+
