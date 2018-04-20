@@ -1,13 +1,46 @@
-.highlight {
-    background-color: #ddd;
-}
-
-button.btn {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  line-height: 1.15;
+.btn {
+  border-radius: 5px;
+  border: 1px solid #545353;
   text-align: center;
   vertical-align: middle;
+  width: 11.4rem;
+  background-color: white;
+  font-size: 1.2rem;
+  color: #1a5bb1;
+  padding: 0.9rem;
+}
+
+.btn--primary {
+  background-color: #1a5bb1;
+  color: white;
+}
+
+.btn--secondary {
+  background-color: #f7f6f5;
+  color: #646361;
+  border-color: #66635f;
+}
+
+.btn--large {
+  width: 16rem;
+  font-size: 1.5rem;
+  padding: 1.3rem;
+}
+
+.btn--extra-large {
+  width: 21rem;
+  font-size: 1.7rem;
+  padding: 1.7rem;
+}
+
+.btn--extra-small {
+  width: 10rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.btn--small {
+  width: 15rem;
+  font-size: 1rem;
+  padding: 1.2rem;
 }
