@@ -1,0 +1,91 @@
+
+html{
+    text-align: center;
+}
+$pink:pink;
+$white:white;
+$blue: #134fd7;
+$grey:#c9c9cc;
+$light-grey:#eeeef0;
+$slim:1px;
+$dark-grey:#696a6b;
+$normal-size:1.5% 5%;
+$large-size:1.5% 8%;
+$extra-large: 1.5% 11%;
+$form-element-color:#728eaa;
+$height:6%;
+$border: inset 2px #c1c585;
+$larg-height: 15%;
+$btn-border: outset 2pt #b5bb5b;
+@mixin button($color, $background-color, $border-color, $thickness, $padding){
+    color: $color;
+    background-color: $background-color;
+    border: $border-color $thickness solid;
+    border-radius: 3pt;
+    font-size:1rem;
+    font-stretch: narrower;
+    font-weight: lighter;
+    padding:$padding;
+    margin-left: 0.7%;
+    &:hover{
+        background-color:$color;
+        color:$background-color;
+       }
+}
+.btn{
+    @include button($blue, $white, $grey, $slim, $normal-size);
+}
+.btn--primary {
+    @include button($white, $blue, $grey, $slim, $normal-size);
+}
+.btn--secondary{
+    @include button($dark-grey, $light-grey, $dark-grey, $slim, $normal-size);
+}
+.btn--large{
+    @include button($blue, $white, $grey, $slim, $large-size);
+    font-size: 1.2rem;
+}
+.btn--extra-large{
+    @include button($blue, $white, $grey, $slim, $extra-large);
+    font-size: 1.3rem;
+
+}
+.container{
+    width:80%;
+    margin: auto;
+    background: rgb(190, 188, 185);
+    text-align: left;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    align-items: center;
+    justify-content: center;
+}
+@mixin form-element ($color, $border, $height){
+    width: 90%;
+    height: $height;
+    margin-bottom: 1%;
+    border: $border;
+    border-radius: 10pt;
+    background-color: $color;
+    &:focus{
+        background-color:#c9c9cc;
+        border: solid 3px $color;
+        outline:none;
+      }
+
+}
+.form_element--text{
+    @include form-element($form-element-color,$border,$height);
+}
+#form_element--subject{
+    @include form-element($white, $border, $larg-height);
+}
+#form_element--country{
+    @include form-element($pink, $border, $height);
+}
+.form_element--submit{
+    @include form-element($blue,$btn-border, $height);
+}
