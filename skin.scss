@@ -1,0 +1,47 @@
+@mixin btn__style(
+  $bck-color,
+  $txt-color,
+  $btn-width,
+  $btn-padding,
+  $btn-font-size
+) {
+  font-size: $btn-font-size;
+  padding: $btn-padding;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: normal;
+  line-height: 1.15;
+  background: $bck-color;
+  color: $txt-color;
+  width: $btn-width;
+}
+
+.demo {
+  .btn {
+    @include btn__style(#fff, #288ad6, 11rem, 1rem, 1rem);
+  }
+
+  .btn--primary {
+    @include btn__style(#015494, #fff, 11rem, 1rem, 1rem);
+  }
+
+  .btn--secondary {
+    @include btn__style(
+      rgb(248, 245, 245),
+      rgb(122, 122, 122),
+      11rem,
+      1rem,
+      1rem
+    );
+    border-color: rgb(87, 85, 85);
+  }
+
+  .btn--large {
+    @include btn__style(#fff, #288ad6, 17rem, 1.3rem, 1.4rem);
+  }
+
+  .btn--extra-large {
+    @include btn__style(#fff, #288ad6, 22rem, 1.5rem, 1.6rem);
+  }
+}
