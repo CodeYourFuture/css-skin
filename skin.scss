@@ -1,4 +1,5 @@
-.btn {
+// Base button style
+@mixin baseButton {
   border-radius: 4px;
   font-size: 1rem;
   padding: 15px 65px;
@@ -6,49 +7,40 @@
   background-color: white;
 }
 
+.btn {
+  @include baseButton;
+}
+
 .btn--primary {
-  border-radius: 4px;
-  font-size: 1rem;
-  padding: 15px 65px;
-  color: #0554ba;
-  background-color: white;
+  @include baseButton;
   background-color: #0554ba;
   color: white;
 }
 
 .btn--secondary {
-  border-radius: 4px;
-  font-size: 1rem;
-  padding: 15px 65px;
-  color: #0554ba;
-  background-color: white;
+  @include baseButton;
   background-color: #f7f6f5;
   color: #5c5f68;
 }
 
 .btn--large {
-  border-radius: 4px;
-  font-size: 1rem;
-  padding: 15px 65px;
-  color: #0554ba;
-  background-color: white;
+  @include baseButton;
   padding-left: 100px;
   padding-right: 100px;
   font-size: 1.2rem;
 }
 
 .btn--extra-large {
-  border-radius: 4px;
-  font-size: 1rem;
-  padding: 15px 65px;
-  color: #0554ba;
-  background-color: white;
+  @include baseButton;
   padding-left: 140px;
   padding-right: 140px;
   font-size: 1.6rem;
 }
 
-input {
+//styles for a from input and dropdown select and a couple of more elements,
+//ul horizontally and ul vertically
+
+@mixin inputComp {
   border-radius: 4px;
   min-height: 40px;
   font-size: 1rem;
@@ -59,7 +51,11 @@ input {
   min-width: 300px;
 }
 
-select {
+input {
+  @include inputComp;
+}
+
+@mixin selectComp {
   border-radius: 4px;
   font-size: 0.8rem;
   text-align: center;
@@ -70,17 +66,23 @@ select {
   text-align: center;
   height: 30px;
   background-color: #f7f4f4;
-  box-shadow: 1px 1px 2px rgba(5, 84, 186, 0.3);
+  box-shadow: 1px 1px 2px rgba($color: #0554ba, $alpha: 0.3);
+}
+
+select {
+  @include selectComp;
+}
+
+@mixin listUnordered($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: space-around;
 }
 
 .list--unordered-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include listUnordered(row);
 }
 
 .list--unordered-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  @include listUnordered(column);
 }
